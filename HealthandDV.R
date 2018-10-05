@@ -1,0 +1,7 @@
+library(readr)
+HealthAndDV <- read_csv("Documents/Homeless analysis/CoC/HealthAndDV.csv")
+colSums(is.na(HealthAndDV))
+table(HealthAndDV$PregnancyStatus)
+table(HealthAndDV$DomesticViolenceVictim)
+length(unique(HealthAndDV$PersonalID))
+table(HealthAndDV$GeneralHealthStatus)     
